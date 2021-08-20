@@ -10,7 +10,7 @@ public class Knight extends Piece {
 	
 	
 	
-	public Knight(int x, int y, String colour, String sprite) {		// constructor method to create an instance of the Knight class
+	protected Knight(int x, int y, String colour, String sprite) {		// constructor method to create an instance of the Knight class
 		super(x, y, colour, sprite);
 	}
 
@@ -21,7 +21,7 @@ public class Knight extends Piece {
 	// sqx and sqy are the coordinates of the square the user is trying to move a knight to, and pieces is the ArrayList of all of the piece objects
 	// checkflag is a flag variable to indicate if we are trying to calculate if a move is legal while in check, or whether we are calculating if a move is legal while not in check
 	
-	public boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {		
+	protected boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {		
 		
 		
 		
