@@ -6,7 +6,7 @@ public class Bishop extends Piece {
 	//the Bishop class is a subclass of the Piece abstract class
 	
 	
-	public Bishop(int x, int y, String colour, String sprite) {		// constructor method to create an instance of the Bishop class
+	protected Bishop(int x, int y, String colour, String sprite) {		// constructor method to create an instance of the Bishop class
 		super(x, y, colour, sprite);
 	}
 
@@ -16,7 +16,7 @@ public class Bishop extends Piece {
 	// sqx and sqy are the coordinates of the square the user is trying to move a bishop to, and pieces is the ArrayList of all of the piece objects
 	// checkflag is a flag variable to indicate if we are trying to calculate if a move is legal while in check, or whether we are calculating if a move is legal while not in check
 	
-	public boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {
+	protected boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {
 		
 		
 		if (Math.abs(this.x - sqx) != Math.abs(this.y - sqy))	// if the bishop did not move diagonally, this is an illegal move
