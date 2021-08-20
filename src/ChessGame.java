@@ -46,7 +46,7 @@ public class ChessGame extends JPanel implements MouseListener {	// this class i
 	
 	
 	
-	public ChessGame ()	// the constructor of the ChessGame class, this method is called in Main.java to instantiate the chess game
+	protected ChessGame ()	// the constructor of the ChessGame class, this method is called in Main.java to instantiate the chess game
 	{
 		addMouseListener(this);	// add the mouse listener to detect mouse clicks
 		setFocusable(true);		
@@ -335,39 +335,39 @@ public class ChessGame extends JPanel implements MouseListener {	// this class i
 		{
 			start=true;
 			
-			pieces.add(new Rook(550,810, "white", "images/w_rook.png"));
-			pieces.add(new Knight(650,810, "white", "images/w_knight.png"));
-			pieces.add(new Bishop(750,810, "white", "images/w_bishop.png"));
-			pieces.add(new Queen(850,810, "white", "images/w_queen.png"));
-			pieces.add(new King(950,810, "white", "images/w_king.png"));
-			pieces.add(new Bishop(1050,810, "white", "images/w_bishop.png"));
-			pieces.add(new Knight(1150,810, "white", "images/w_knight.png"));
-			pieces.add(new Rook(1250,810, "white", "images/w_rook.png"));
-			pieces.add(new Pawn(550,710, "white", "images/w_pawn.png"));
-			pieces.add(new Pawn(650,710, "white", "images/w_pawn.png"));		// create all of the white pieces at their default positions
-			pieces.add(new Pawn(750,710, "white", "images/w_pawn.png"));
-			pieces.add(new Pawn(850,710, "white", "images/w_pawn.png"));
-			pieces.add(new Pawn(950,710, "white", "images/w_pawn.png"));
-			pieces.add(new Pawn(1050,710, "white", "images/w_pawn.png"));
-			pieces.add(new Pawn(1150,710, "white", "images/w_pawn.png"));
-			pieces.add(new Pawn(1250,710, "white", "images/w_pawn.png"));
+			pieces.add(new Rook(550,810, "white", "/w_rook.png"));
+			pieces.add(new Knight(650,810, "white", "/w_knight.png"));
+			pieces.add(new Bishop(750,810, "white", "/w_bishop.png"));
+			pieces.add(new Queen(850,810, "white", "/w_queen.png"));
+			pieces.add(new King(950,810, "white", "/w_king.png"));
+			pieces.add(new Bishop(1050,810, "white", "/w_bishop.png"));
+			pieces.add(new Knight(1150,810, "white", "/w_knight.png"));
+			pieces.add(new Rook(1250,810, "white", "/w_rook.png"));
+			pieces.add(new Pawn(550,710, "white", "/w_pawn.png"));
+			pieces.add(new Pawn(650,710, "white", "/w_pawn.png"));		// create all of the white pieces at their default positions
+			pieces.add(new Pawn(750,710, "white", "/w_pawn.png"));
+			pieces.add(new Pawn(850,710, "white", "/w_pawn.png"));
+			pieces.add(new Pawn(950,710, "white", "/w_pawn.png"));
+			pieces.add(new Pawn(1050,710, "white", "/w_pawn.png"));
+			pieces.add(new Pawn(1150,710, "white", "/w_pawn.png"));
+			pieces.add(new Pawn(1250,710, "white", "/w_pawn.png"));
 			
-			pieces.add(new Rook(550,110, "black", "images/b_rook.png"));
-			pieces.add(new Knight(650,110, "black", "images/b_knight.png"));
-			pieces.add(new Bishop(750,110, "black", "images/b_bishop.png"));
-			pieces.add(new Queen(850,110, "black", "images/b_queen.png"));
-			pieces.add(new King(950,110, "black", "images/b_king.png"));
-			pieces.add(new Bishop(1050,110, "black", "images/b_bishop.png"));
-			pieces.add(new Knight(1150,110, "black", "images/b_knight.png"));
-			pieces.add(new Rook(1250,110, "black", "images/b_rook.png"));
-			pieces.add(new Pawn(550,210, "black", "images/b_pawn.png"));
-			pieces.add(new Pawn(650,210, "black", "images/b_pawn.png"));		// create all of the black pieces at their default positions
-			pieces.add(new Pawn(750,210, "black", "images/b_pawn.png"));
-			pieces.add(new Pawn(850,210, "black", "images/b_pawn.png"));
-			pieces.add(new Pawn(950,210, "black", "images/b_pawn.png"));
-			pieces.add(new Pawn(1050,210, "black", "images/b_pawn.png"));
-			pieces.add(new Pawn(1150,210, "black", "images/b_pawn.png"));
-			pieces.add(new Pawn(1250,210, "black", "images/b_pawn.png"));
+			pieces.add(new Rook(550,110, "black", "/b_rook.png"));
+			pieces.add(new Knight(650,110, "black", "/b_knight.png"));
+			pieces.add(new Bishop(750,110, "black", "/b_bishop.png"));
+			pieces.add(new Queen(850,110, "black", "/b_queen.png"));
+			pieces.add(new King(950,110, "black", "/b_king.png"));
+			pieces.add(new Bishop(1050,110, "black", "/b_bishop.png"));
+			pieces.add(new Knight(1150,110, "black", "/b_knight.png"));
+			pieces.add(new Rook(1250,110, "black", "/b_rook.png"));
+			pieces.add(new Pawn(550,210, "black", "/b_pawn.png"));
+			pieces.add(new Pawn(650,210, "black", "/b_pawn.png"));		// create all of the black pieces at their default positions
+			pieces.add(new Pawn(750,210, "black", "/b_pawn.png"));
+			pieces.add(new Pawn(850,210, "black", "/b_pawn.png"));
+			pieces.add(new Pawn(950,210, "black", "/b_pawn.png"));
+			pieces.add(new Pawn(1050,210, "black", "/b_pawn.png"));
+			pieces.add(new Pawn(1150,210, "black", "/b_pawn.png"));
+			pieces.add(new Pawn(1250,210, "black", "/b_pawn.png"));
 							
 		}
 		
@@ -420,8 +420,11 @@ public class ChessGame extends JPanel implements MouseListener {	// this class i
 		
 		for (int i = 0; i < pieces.size(); i++)
 		{
-			(new ImageIcon(pieces.get(i).sprite)).paintIcon(this, g, pieces.get(i).x , pieces.get(i).y );
+			new ImageIcon(ChessGame.class.getResource(pieces.get(i).sprite)).paintIcon(this, g, pieces.get(i).x, pieces.get(i).y);
 		}
+		
+		
+		
 		
 		
 		
@@ -504,7 +507,6 @@ public class ChessGame extends JPanel implements MouseListener {	// this class i
 			
 		}
 	}
-	
 	
 	
 	
