@@ -14,7 +14,7 @@ public abstract class Piece {
 	
 	
 	
-	public Piece(int x, int y, String colour, String sprite) {		// general constructor method of a piece, each piece must contain an x and y coordinate, a colour (white or black) and an image sprite to be painted onto the board
+	protected Piece(int x, int y, String colour, String sprite) {		// general constructor method of a piece, each piece must contain an x and y coordinate, a colour (white or black) and an image sprite to be painted onto the board
 		super();
 		this.x = x;
 		this.y = y;
@@ -27,7 +27,7 @@ public abstract class Piece {
 	
 	
 	
-public abstract boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag);		// abstract method that every piece subclass will implement to check if a move of that specific type of piece is legal, in order to prevent the user from playing illegal moves
+protected abstract boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag);		// abstract method that every piece subclass will implement to check if a move of that specific type of piece is legal, in order to prevent the user from playing illegal moves
 
 
 
