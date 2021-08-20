@@ -12,7 +12,7 @@ public class Queen extends Piece {
 	
 	
 	
-	public Queen(int x, int y, String colour, String sprite) {		// the constructor method to instantiate a Queen object
+	protected Queen(int x, int y, String colour, String sprite) {		// the constructor method to instantiate a Queen object
 		super(x, y, colour, sprite);
 		
 	}
@@ -24,7 +24,7 @@ public class Queen extends Piece {
 	// sqx and sqy are the coordinates of the square the user is trying to move a queen to, and pieces is the ArrayList of all of the piece objects
 	// checkflag is a flag variable to indicate if we are trying to calculate if a move is legal while in check, or whether we are calculating if a move is legal while not in check
 	
-	public boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {
+	protected boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {
 		
 		
 		
