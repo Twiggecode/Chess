@@ -9,7 +9,7 @@ public class King extends Piece {
 	
 	
 	
-	public King(int x, int y, String colour, String sprite) {		// the constructor method to instantiate a King object
+	protected King(int x, int y, String colour, String sprite) {		// the constructor method to instantiate a King object
 		super(x, y, colour, sprite);
 		
 	}
@@ -559,7 +559,7 @@ public class King extends Piece {
 	
 
 
-	public boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {
+	protected boolean IsLegalMove(ArrayList<Piece> pieces, int sqx, int sqy, boolean checkflag) {
 		
 		
 		if ((Math.abs(this.x - sqx) > 100) || (Math.abs(this.y - sqy) > 100) )	// if the king moves more than one square, this is an illegal move
@@ -589,4 +589,3 @@ public class King extends Piece {
 	
 	
 }
-	
