@@ -9,12 +9,13 @@ import javax.swing.JPanel;
 
 
 
-
-// an instance of this class represents an instance of a game of chess
-// this class contains the general functionality of my chess game, allowing the user to click on a piece to select it, and click on a square to move the piece to the square
-// my program will prevent the user from making illegal moves
-// the game will end in either a win for white or a win for black if either player can checkmate the other
-// the game will end in a draw if there is not a sufficient amount of pieces held by both players to checkmate the other (what's called a draw by insufficient material)
+   /*
+   an instance of this class represents an instance of a game of chess
+   this class contains the general functionality of my chess game, allowing the user to click on a piece to select it, and click on a square to move the piece to the square
+   my program will prevent the user from making illegal moves
+   the game will end in either a win for white or a win for black if either player can checkmate the other
+   the game will end in a draw if there is not a sufficient amount of pieces held by both players to checkmate the other (what's called a draw by insufficient material) 
+   */
 
 
 
