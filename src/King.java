@@ -18,9 +18,11 @@ public class King extends Piece {
 	
 	
 	
-	// method to determine if a king is in check or not by analysing the positions of all pieces on the board
-	// pieces is the ArrayList containing all of the Piece objects on the board
-	// capturedpiece is the index within the pieces ArrayList of a piece that is about to be captured, so that we can ignore if the piece that is going to be captured puts a king in check or not
+	/* 
+	 method to determine if a king is in check or not by analysing the positions of all pieces on the board
+	 pieces is the ArrayList containing all of the Piece objects on the board	 
+	 capturedpiece is the index within the pieces ArrayList of a piece that is about to be captured, so that we can ignore if the piece that is going to be captured puts a king in check or not
+	 */
 	
 	protected boolean IsInCheck(ArrayList<Piece> pieces, int capturedpiece)
 	{
@@ -89,18 +91,20 @@ public class King extends Piece {
 	
 	
 	
-		// method to detect if either player has checkmated the other
+		/* 
+		   method to detect if either player has checkmated the other
 	
-		// this function firstly sees if the king is in check, the king cannot be in checkmate if it is not in check
-		// this function then identifies all the squares around the king that the king can potentially move to (so empty squares or squares with enemy pieces)
-		// it then checks to see if any enemy pieces can move to these squares (to see if the king has any 'safe' squares to move to)
-		// if the king has at least 1 safe square to move to, it's not checkmate, return false
+		   this function firstly sees if the king is in check, the king cannot be in checkmate if it is not in check
+		   this function then identifies all the squares around the king that the king can potentially move to (so empty squares or squares with enemy pieces)
+		   it then checks to see if any enemy pieces can move to these squares (to see if the king has any 'safe' squares to move to)
+		   if the king has at least 1 safe square to move to, it's not checkmate, return false
 		
-		// it then sees if it is possible to get out of check by capturing an enemy piece, if so, it's not checkmate
+		   it then sees if it is possible to get out of check by capturing an enemy piece, if so, it's not checkmate
 		
-		// then it sees if it is possible to get out of check by blocking with a piece, if so, it's not checkmate
+		   then it sees if it is possible to get out of check by blocking with a piece, if so, it's not checkmate
 		
-		// if the king is in check, has no safe squares to move to, and there is no way to get out of check by capturing or blocking a piece, it's checkmate, return true
+		   if the king is in check, has no safe squares to move to, and there is no way to get out of check by capturing or blocking a piece, it's checkmate, return true	   
+		   */
 		
 	
 	
